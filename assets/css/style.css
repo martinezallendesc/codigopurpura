@@ -1,0 +1,39 @@
+body {
+  background-color: #000000;
+}
+
+section .contenedor-principal {
+  display: grid;
+}
+
+h1 {
+  color: azure;
+}
+
+p {
+  color: azure;
+  display: block;
+}
+
+.imagen {
+  grid-area: imagen;
+}
+
+.titulo {
+  grid-area: titulo;
+}
+
+.resumen {
+  grid-area: resumen;
+}
+
+.letra-chica {
+  grid-area: letra-chica;
+}
+
+.contenedor-principal {
+  grid-template-areas:
+    "imagen titulo"
+    "imagen resumen"
+    "letra-chica letra-chica";
+}
