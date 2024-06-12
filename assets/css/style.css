@@ -1,39 +1,78 @@
 body {
-  background-color: #000000;
+    background-color: azure;
+    grid-template-areas: 
+    "columna-izquierda menu menu"
+    "columna-izquierda columna-contenido columna-contenido"
+    "columna-izquierda pie-pagina pie-pagina"
+    ;
 }
 
-section .contenedor-principal {
-  display: grid;
+.sitio {
+    display: grid;
+    grid-template-columns: 30% ;
 }
 
-h1 {
-  color: azure;
+.menu {
+    grid-area: menu;
 }
 
-p {
-  color: azure;
-  display: block;
+.columna-izquierda {
+    grid-area: columna-izquierda;
+
 }
 
-.imagen {
-  grid-area: imagen;
+.columna-contenido {
+    grid-area: columna-contenido;
+    h3 {
+        font-size: medium;
+        color: #6256A0;
+    }
 }
 
-.titulo {
-  grid-area: titulo;
+.ficha-tecnica {
+    grid-area: ficha-tecnica;
+
+    h1 {
+        font-size: larger;
+        color: #6256A0;
+
+    }
 }
 
-.resumen {
-  grid-area: resumen;
+
+.pie-pagina {
+    grid-area: pie-pagina;
+    background-color: black;
+    h6 {
+        font-size: smaller;
+        color: #ffffff;
+    }
 }
 
-.letra-chica {
-  grid-area: letra-chica;
+.tab {
+border: 2px solid;
+border-color: blueviolet;
+background-color: aquamarine;
+margin: 10px;
 }
 
-.contenedor-principal {
-  grid-template-areas:
-    "imagen titulo"
-    "imagen resumen"
-    "letra-chica letra-chica";
+.menu-items {
+    display: flex;
+    justify-content: end;
+
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: end;
+}
+
+.redes-sociales img {
+    width: 50px;
+}
+
+.logo {
+    img {
+        width: 200px;
+    }
 }
